@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <div class="nav" style="">
+        <div class="card-body bg-danger">
+            <h2 style="text-align:center; color: white;" class="card-title">CALCULADORA</h2>
+        </div>
+    </div>
+</head>
+<body id="cuerpo">
+    <div class="container">
+        <div class="card-body bg-dark">
+            <div class="form">
+               <input readonly="readonly" style="width: 452px; margin-left: 95px; text-align: center; font-size: 160%;" class="form-control" id="txt_result" style="text-align: center;" type="text" name="" placeholder="Expresion" id="">     
+            </div>
+            <div class="card-body" style="margin-left: 75px;">
+                <div style="margin-top: 5px;">
+                    <input style="font-size: 130%;" onclick="main(this)" type="submit" value="+" class="btn btn-light" id="btn_mas">
+                    <input style="font-size: 130%;" onclick="main(this)" type="submit" value="-" class="btn btn-light" id="btn_menos">
+                    <input style="font-size: 130%;" onclick="main(this)" type="submit" value="*" class="btn btn-light" id="btn_multiplicar">
+                </div>
+                <div style="margin-top: 5px;">
+                    <input type="submit" value="1" onclick="main(this)" class="btn btn-primary" id="btn_uno">
+                    <input type="submit" value="2" onclick="main(this)" class="btn btn-primary" id="btn_dos">
+                    <input type="submit" value="3" onclick="main(this)" class="btn btn-primary" id="btn_tres">
+                </div>
+                <div style="margin-top: 5px;">
+                    <input type="submit" value="4" onclick="main(this)" class="btn btn-primary" id="btn_cuatro">
+                    <input type="submit" value="5" onclick="main(this)" class="btn btn-primary" id="btn_cinco">
+                    <input type="submit" value="6" onclick="main(this)" class="btn btn-primary" id="btn_seis">
+                </div>
+                <div style="margin-top: 5px;">
+                    <input type="submit" value="7" onclick="main(this)" class="btn btn-primary" id="btn_siete">
+                    <input type="submit" value="8" onclick="main(this)" class="btn btn-primary" id="btn_ocho">
+                    <input type="submit" value="9" onclick="main(this)" class="btn btn-primary" id="btn_nueve">
+                </div>
+                <div style="margin-top: 5px;">
+                    <input type="submit" onclick="main(this)" value="0" class="btn btn-primary" id="btn_cero">
+                    <input type="submit" onclick="main(this)" value="DELETE" class="btn btn-primary" id="btn_delete">
+                    <input type="submit" onclick="main(this)" value="=" class="btn btn-primary" id="btn_resultado">
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="js/app.js"></script>
+</body>
+</html>
